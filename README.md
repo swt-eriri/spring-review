@@ -32,4 +32,9 @@ GPT 素材只有概括。默认值、常量、回滚规则这类细节是按 Spr
 - [x] 用户确认第二版后（2026-11-20），铺开全部 20 个模块：52 节讲解，423 道题（主线题 + 进阶题 + 随堂练习）；模拟卷 43 单选 + 10 多选，只抽主线题
 - [x] build.py 会把加粗统一换成 <strong>（中文标点紧挨 ** 时 Markdown 不认加粗）
 - [ ] 用户试用全部内容
-- [ ] 发布：新建公开仓库 spring-review 到 GitHub Pages（发布前先问用户）
+- [x] 已发布（2026-11-20）：仓库 swt-eriri/spring-review，网址 https://swt-eriri.github.io/spring-review/
+- [x] 导航站：仓库 swt-eriri/study，网址 https://swt-eriri.github.io/study/（源码副本在上一级 study 文件夹）；两个学习站侧栏都有「全部学习站」入口（tools/add_hub_link.py，Python 站直接对它的 index.html 运行）
+
+## 以后更新怎么发布
+
+改完 content 后运行 python build.py，把整个文件夹提交推送到 swt-eriri/spring-review 的 main 分支，GitHub Pages 会自动更新。
